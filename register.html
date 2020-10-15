@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng nhập</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<link rel="stylesheet" href="css/stylecategory.css">
+	<script src="https://kit.fontawesome.com/b631d4d298.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  	<script src="js/jquery.min.js"></script>
+  	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+	<!-- menu -->
+	<!-- menu_top -->
+	<nav class="menu_top_bg">
+		<div class="container menu_top_content">
+			<ul class="menu_top_content1">
+				<li><i class="fas fa-map-marker-alt fa-fw icon1"></i> Hoài Đức - Hà Nội</li>
+				<li><i class="far fa-clock fa-fw icon1"></i> 08.00 - 17.00</li>
+				<li><i class="fas fa-phone-alt fa-fw icon1"></i> 0966.57.58.99</li>
+			</ul>
+			<ul class="menu_top_content2">
+				<li>
+					<a href="#"><i class="fab fa-facebook fa-fw icon1"></i></a>
+					<a href="#"><i class="far fa-envelope fa-fw icon1"></i></a>
+					<a href="#"><i class="fab fa-skype fa-fw icon1"></i></a>
+				</li>
+				<li><a href="register.html" class="login1">Đăng ký</a></li>
+				<li><a href="login.html" class="login1">Đăng nhập</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- end menu_top -->
+	<!-- go_to_top -->
+	<a id="button"></a>
+	<!-- end go_to_top -->
+	<!-- menu_main -->
+<!-- topnav -->
+	<div class="nav">
+		<div class="container">
+			<div class="topnav" id="main">
+				<div class="topnav_icon" onclick="openNav()">
+					<a href="#"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="topnav_logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+				<div class="topnav_content">
+					<div class="nav_search">
+						<div class="form-group has-search">
+							<span class="fa fa-search form-control-feedback"></span>
+							<input type="text" class="form-control" placeholder="Tìm kiếm...">
+						</div>
+					</div>
+					<ul>
+						<li><a href="index.html" class="active">TRANG CHỦ</a></li>
+						<li><a href="#">GIỚI THIỆU</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown_title">CỬA HÀNG</a>
+							<div class="dropdown_content">
+								<a href="category.html">Sản Phẩm Sơn</a>
+								<a href="category.html">Sản Phẩm Phụ Trợ</a>
+							</div>
+						<li><a href="#">Ý TƯỞNG</a></li>
+						<li><a href="#">LIÊN HỆ</a></li>
+					</ul>
+				</div>
+				<div class="topnav_cart">
+					<ul>
+						<li class="dropdown">
+							<a href="#" title="Giỏ hàng" class="dropdown_title"><i class="fas fa-cart-plus"></i><sup><span class="badge badge-danger">3</span></sup></a>
+							<div class="dropdown_content1">
+								<p>
+									<img src="images/son1.jpg" alt="" style="width: 50px;">
+									Dulux Weathershield Chất Chống Thấm
+								</p>
+								<p>
+									<img src="images/son2.jpg" alt="" style="width: 50px;">
+									Dulux Weathershield Chất Chống Thấm
+								</p>
+								<p>
+									<img src="images/son3.jpg" alt="" style="width: 50px;">
+									Dulux Weathershield Chất Chống Thấm
+								</p>
+								<p class="btn btn-primary">Thanh toán</p>
+							</div>
+						</li>
+					</ul>						
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end topnav -->
+	<!-- sidenav -->
+	<div class="sidenav">
+		<div class="sidenav_bg" id="sideNav"></div>
+		<div id="mySidenav" class="sidenav_content">
+			<ul>
+				<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+				<li>
+					<div class="nav_search">
+						<div class="form-group has-search">
+							<span class="fa fa-search form-control-feedback"></span>
+							<input type="text" class="form-control" placeholder="Tìm kiếm...">
+						</div>
+					</div>
+				</li>
+				<li><a href="#">TRANG CHỦ</a></li>
+				<li><a href="#">GIỚI THIỆU</a></li>
+				<li class="dropdownn" >
+					<a href="#">CỬA HÀNG</a>
+					<div class="dropdown_content">
+						<a href="category.html" class="dropdown-item">Sản Phẩm Sơn</a>
+						<a href="category.html" class="dropdown-item">Sản Phẩm Phụ Trợ</a>
+					</div>
+				</li>
+				<li><a href="#">Ý TƯỞNG</a></li>
+				<li><a href="#">LIÊN HỆ</a></li>
+				<li><a href="register.html">ĐĂNG KÝ</a></li>
+				<li><a href="login.html">ĐĂNG NHẬP</a></li>
+				<li class="sidenav_incon">
+					<span><a href="#"><i class="fab fa-facebook fa-fw"></i></a></span>
+					<span><a href="#"><i class="far fa-envelope fa-fw"></i></i></a></span>
+					<span><a href="#"><i class="fab fa-skype fa-fw"></i></a></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end sidenav -->
+	<!-- end menu_main -->
+	<!-- main -->
+	<div class="container main">
+		<!-- side_left -->
+		<div class="main_side_left">
+			<div class="sidenav_bg" id="sideNav"></div>
+			<div class="sidenav_content1 " id="mySideLeft">
+				<span class="close_left_icon"><a href="javascript:void(0)" class="closebtn1" onclick="closeLeft()">&times;</a></span>
+				<!-- category -->
+				<div class="main_left_category">
+					<div class="main_left_category_title">DANH MỤC SẢN PHẨM</div>
+					<div class="main_left_category_content card">
+						<ul>
+							<li><a href="#">Sản Phẩm Sơn</a></li>
+							<li><a href="#">Sản Phẩm Phụ Trợ</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end category -->
+				<!-- product -->
+				<div class="main_left_product">
+					<div class="main_left_product_title">SẢN PHẨM</div>
+					<div class="main_left_product_content card">
+						<ul>
+							<li><a href="detail.html">
+								<div><img src="images/lot1.jpg" alt="..."></div>
+								<div>Sơn Lót Nội Thất Cao Cấp Dulux</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/lot2.jpg" alt="..."></div>
+								<div>Dulux Weathershield Sơn lót chống kiềm</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/lot3.jpg" alt="..."></div>
+								<div>Bột trét Dulux cao cấp</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/lot4.jpg" alt="..."></div>
+								<div>Maxilite Sơn Lót Chống Rỉ</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/son1.jpg" alt="..."></div>
+								<div>Dulux Weathershield</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end product -->
+				<!-- new -->
+				<div class="main_left_news">
+					<div class="main_left_new_title">BÀI VIẾT MỚI NHẤT</div>
+					<div class="main_left_new_content card">
+						<ul>
+							<li><a href="detail.html">
+								<div><img src="images/img1.jpg" alt="..."></div>
+								<div>4 cách để thay áo cho phòng khách của bạn với Màu Dulux của Năm 2018</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/img2.jpg" alt="..."></div>
+								<div>
+									Dẫn đầu xu hướng với sắc trắng mang bản sắc riêng
+								</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/img3.jpg" alt="..."></div>
+								<div>
+									Khám phá vẻ đẹp của thiên nhiên từ màu nâu đất tuyệt mỹ
+								</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/img4.jpg" alt="..."></div>
+								<div>
+									Những cách tuyệt vời để ngôi nhà của bạn có cảm giác như mới mà không cần di chuyển
+								</div>
+								</a>
+							</li>
+							<li><a href="detail.html">
+								<div><img src="images/img5.jpg" alt="..."></div>
+								<div>
+									Xu hướng màu sắc: Sang trọng tinh tế
+								</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end new -->
+			</div>
+		</div>
+		<!-- end side_left -->
+		<!-- main_left -->
+		<div class="main_left ">
+			<!-- category -->
+			<div class="main_left_category">
+				<div class="main_left_category_title">DANH MỤC SẢN PHẨM</div>
+				<div class="main_left_category_content card">
+					<ul>
+						<li><a href="#">Sản Phẩm Sơn</a></li>
+						<li><a href="#">Sản Phẩm Phụ Trợ</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end category -->
+			<!-- product -->
+			<div class="main_left_product">
+				<div class="main_left_product_title">SẢN PHẨM</div>
+				<div class="main_left_product_content card">
+					<ul>
+						<li><a href="detail.html">
+							<div><img src="images/lot1.jpg" alt="..."></div>
+							<div>Sơn Lót Nội Thất Cao Cấp Dulux</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/lot2.jpg" alt="..."></div>
+							<div>Dulux Weathershield Sơn lót chống kiềm</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/lot3.jpg" alt="..."></div>
+							<div>Bột trét Dulux cao cấp</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/lot4.jpg" alt="..."></div>
+							<div>Maxilite Sơn Lót Chống Rỉ</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/son1.jpg" alt="..."></div>
+							<div>Dulux Weathershield</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end product -->
+			<!-- new -->
+			<div class="main_left_news">
+				<div class="main_left_new_title">BÀI VIẾT MỚI NHẤT</div>
+				<div class="main_left_new_content card">
+					<ul>
+						<li><a href="detail.html">
+							<div><img src="images/img1.jpg" alt="..."></div>
+							<div>4 cách để thay áo cho phòng khách của bạn với Màu Dulux của Năm 2018</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/img2.jpg" alt="..."></div>
+							<div>
+								Dẫn đầu xu hướng với sắc trắng mang bản sắc riêng
+							</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/img3.jpg" alt="..."></div>
+							<div>
+								Khám phá vẻ đẹp của thiên nhiên từ màu nâu đất tuyệt mỹ
+							</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/img4.jpg" alt="..."></div>
+							<div>
+								Những cách tuyệt vời để ngôi nhà của bạn có cảm giác như mới mà không cần di chuyển
+							</div>
+							</a>
+						</li>
+						<li><a href="detail.html">
+							<div><img src="images/img5.jpg" alt="..."></div>
+							<div>
+								Xu hướng màu sắc: Sang trọng tinh tế
+							</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end new -->
+		</div>
+		<!-- end main_left -->
+		<!-- main_right -->
+		<div class="main_right main_login">
+			<div class="login_title">Đăng ký tài khoản</div>
+			<hr>
+			<div class="login_title1">Nếu bạn chưa có tài khoản, hãy đăng ký ngay để nhận thông tin ưu đãi cùng những ưu đãi từ cửa hàng</div>
+			<div class="row login_content">
+				<div class="col-md-6">
+	              <div class="wrapper-form card">
+	                <form method='post' action="/Account/LoginPost">
+	                  <input name="__RequestVerificationToken" type="hidden" value="CfDJ8NCDIeDSHgNIh7wY7X1HBtTC5UoDhnpPY_bZxEAeHg3_XzL3KFfHY1L7RC4b6K5PPzwy7cBnVlo7o43qXnf1fjxMAvl49i2tyH2k-qFbQOFYRs5LeSDFHBI6XXee3ODmKapQeEAQcEVH5_7dlOO309Y" />
+	                  <p class="login_title2 card-header"><span>Đăng ký tài khoản</span></p>
+	                  <div class="form-groupp card-body">
+	                  	<label>Họ và Tên:</label>
+	                    <input type="text" class="input-control form-control" name="name" required="" class="form-control">
+	                    <label>Email:<b id="req">*</b></label>
+	                    <input type="email" class="input-control form-control" name="email" required="" class="form-control">
+	                    <label>Địa chỉ:</label>
+	                    <input type="text" class="input-control form-control" name="address" required="" class="form-control">
+	                    <label>Điện thoại:</label>
+	                    <input type="text" class="input-control form-control" name="phone" required="" class="form-control">
+	                    <label>Mật khẩu:<b id="req">*</b></label>
+	                    <input type="password" class="input-control form-control" name="password" required="" >
+	                  	<button type="submit" class="btn btn-primary mt-3" value="">Đăng ký</button>
+	                  </div>
+	                </form>
+	              </div>
+            	</div>
+	            <div class="col-md-6">
+	              <div class="wrapper-form card">
+	                <p class="login_title2 card-header"><span>Đăng nhập</span></p>
+	                <div class="card-body">
+	                	<p class="login_text">Đăng ký tài khoản để mua hàng nhanh hơn. Theo dõi đơn đặt hàng, vận chuyển. Cập nhật các sự kiện và chương trình giảm giá của chúng tôi.</p>
+	                	<a href="/Account/Register" class="btn btn-primary mt-1">Đăng nhập</a> 
+	                </div>
+	              </div>
+	            </div>
+			</div>
+		</div>
+		<!-- end main_right -->
+	</div>
+	<!-- end main -->
+
+
+
+
+	<!-- footer -->
+	<nav class="footer">
+		<div class="container footer_bg">
+			<div class="row footer_content">
+				<div class="col-sm-3 col-12 ">
+					<ul>
+						<a href="index.html"><li class="footer_content_title"><img src="images/logo2.png" alt="logo"></li></a>
+						<li class="footer_content_text"><i class="fas fa-map-marker-alt fa-fw iconn"></i>&nbsp;&nbsp;Đức Thượng,Hoài Đức,Hà Nội</li>
+						<li class="footer_content_text"><i class="fas fa-phone-alt fa-fw iconn"></i>&nbsp;&nbsp;0966.57.58.99</li>
+						<li class="footer_content_text"><i class="far fa-envelope fa-fw iconn"></i>&nbsp;&nbsp;Ngotienpts@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-12 line">
+					<ul>
+						<li class="footer_content_title">MENU</li>
+						<li class="footer_content_text active">
+							<a href="index.html"><i class="fas fa-paint-brush fa-fw"></i>&nbsp;&nbsp;Trang chủ</a>
+						</li>
+						<li class="footer_content_text">
+							<a href="#"><i class="fas fa-paint-brush fa-fw"></i>&nbsp;&nbsp;Giới thiệu</a>
+						</li>
+						<li class="footer_content_text">
+							<a href="#"><i class="fas fa-paint-brush fa-fw"></i>&nbsp;&nbsp;Cửa hàng</a>
+						</li>
+						<li class="footer_content_text">
+							<a href="#"><i class="fas fa-paint-brush fa-fw"></i>&nbsp;&nbsp;Ý tưởng</a>
+						</li>
+						<li class="footer_content_text">
+							<a href="#"><i class="fas fa-paint-brush fa-fw"></i>&nbsp;&nbsp;Liên hệ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-12 ">
+					<ul>
+						<li class="footer_content_title">ĐĂNG KÝ NHẬN BẢN TIN</li>
+						<li class="footer_content_text">
+							Hãy đăng ký để không bỏ lỡ những ưu đãi mới nhất của chúng tôi.
+						</li>
+						<li class="footer_content_text">
+							<form class="form-inline my-2 my-lg-0">
+						      <input class="form-control mr-sm-2" type="email" placeholder="Email..." aria-label="Search">
+						      <button class="btn btn-primary my-2 my-sm-0" type="submit">Đăng ký</button>
+						    </form>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-facebook fa-fw iconn"></i></a>
+							<a href="#"><i class="fab fa-instagram fa-fw iconn"></i ></a>
+							<a href="#"><i class="fab fa-youtube-square fa-fw iconn"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--  end footer -->
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/scriptcategory.js"></script>
+</body>
+</html>

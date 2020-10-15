@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/cssvd.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/b631d4d298.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<title>vd</title>
+</head>
+<body>
+	<div class="layer1">
+		<a href=""></a>
+	</div>
+	<div class="layer2" id="demo">
+		
+	</div>
+	<!-- topnav -->
+	<div class="nav">
+		<div class="container">
+			<div class="topnav" id="main">
+				<div class="topnav_icon" onclick="openNav()">
+					<a href="#"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="topnav_logo"><a href="#"><img src="images/logo.png" alt="Logo"></a></div>
+				<div class="topnav_content">
+					<div class="nav_search">
+						<div class="form-group has-search">
+							<span class="fa fa-search form-control-feedback"></span>
+							<input type="text" class="form-control" placeholder="Tìm kiếm...">
+						</div>
+					</div>
+					<ul>
+						<li><a href="#" class="active">TRANG CHỦ</a></li>
+						<li><a href="#">GIỚI THIỆU</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown_title">CỬA HÀNG</a>
+							<div class="dropdown_content">
+								<a href="#">Sản Phẩm Sơn</a>
+								<a href="#">Sản Phẩm Phụ Trợ</a>
+							</div>
+						<li><a href="#">Ý TƯỞNG</a></li>
+						<li><a href="#">LIÊN HỆ</a></li>
+					</ul>
+				</div>
+				<div class="topnav_cart">
+					<ul>
+						<li class="dropdown">
+							<a href="#" title="Giỏ hàng" class="dropdown_title"><i class="fas fa-cart-plus"></i><sup><span class="badge badge-danger">0</span></sup></a>
+							<div class="dropdown_content1">Chưa có sản phẩm trong giỏ hàng</div>
+						</li>
+					</ul>						
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end topnav -->
+	<!-- sidenav -->
+	<div class="sidenav">
+		<div class="sidenav_bg" id="sideNav"></div>
+		<div id="mySidenav" class="sidenav_content">
+			<ul>
+				<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+				<li>
+					<div class="nav_search">
+						<div class="form-group has-search">
+							<span class="fa fa-search form-control-feedback"></span>
+							<input type="text" class="form-control" placeholder="Tìm kiếm...">
+						</div>
+					</div>
+				</li>
+				<li><a href="#">TRANG CHỦ</a></li>
+				<li><a href="#">GIỚI THIỆU</a></li>
+				<li class="dropdownn" >
+					<a href="#">CỬA HÀNG</a>
+					<div class="dropdown_content">
+						<a href="#" class="dropdown-item">Sản Phẩm Sơn</a>
+						<a href="#" class="dropdown-item">Sản Phẩm Phụ Trợ</a>
+					</div>
+				</li>
+				<li><a href="#">Ý TƯỞNG</a></li>
+				<li><a href="#">LIÊN HỆ</a></li>
+				<li><a href="#">ĐĂNG KÝ</a></li>
+				<li><a href="#">ĐĂNG NHẬP</a></li>
+				<li class="sidenav_incon">
+					<span><a href="#"><i class="fab fa-facebook fa-fw"></i></a></span>
+					<span><a href="#"><i class="far fa-envelope fa-fw"></i></i></a></span>
+					<span><a href="#"><i class="fab fa-skype fa-fw"></i></a></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end sidenav -->
+	<script type="text/javascript" src="js/jsvd.js"></script>
+</body>
+</html>

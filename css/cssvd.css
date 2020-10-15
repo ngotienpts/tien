@@ -1,0 +1,277 @@
+@font-face{
+	font-family: Roboto;
+	src:url('../font/Roboto-Light.ttf');
+}
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: Roboto;
+}	
+body{
+	height: 2000px;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+/*nav-------------------------------------------------------*/
+.nav{
+	background: #f8f9fa;
+	width: 100%;
+	max-height: 90px;
+	
+}
+/*topnav_icon--------------------------------------*/
+.topnav_icon{
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+	display: none;
+}
+.topnav_icon a{
+	color: black;
+}
+.topnav_icon a:hover{
+	color: #00a8ff;
+}
+.topnav{
+	display: flex;
+	position: relative;
+}
+/*topnav-logo-----------------------------------*/
+.topnav_logo{
+	padding: 10px 0px;
+}
+.topnav_logo > a >img{
+	max-width: 140px;
+}
+.topnav_content{
+	margin: auto;
+	display: flex;
+
+}
+.topnav_content > ul{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-top: 7px;
+}
+.topnav_content >ul> li{
+	padding: 0 10px;
+}
+.topnav_content> ul> li>a{
+	color: black;
+	/*font-weight: bold;*/
+}
+.topnav_content> ul> li>a:hover{
+	color: #00a8ff;
+}
+.topnav_content> ul> li>a.active{
+	color: #00a8ff; 
+}
+/*topnav_cart--------------------------------------*/
+.topnav_cart{
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0%,-50%);
+}
+.topnav_cart ul{
+	padding: 0;
+	margin: 0;
+}
+.topnav_cart a{
+	color: #636262;
+}
+.topnav_cart a:hover{
+	color: #00a8ff;
+}
+.dropdown_content1{
+	position: absolute;
+	display: none;
+	z-index: 99;
+	min-width: 300px;
+	height: auto;
+	background: white;
+	box-shadow: 0 0 10px 2px #cdcdcd;
+	font-size: 14px;
+	color: black;
+	padding: 20px;
+	right: 0;
+	border-radius: 6px;
+
+}
+.dropdown:hover .dropdown_content1{
+	display: block;
+}
+/*dropdown---------------------------*/
+.dropdown{
+	display: inline-block;
+	position: relative;
+}
+
+
+.dropdown_content{
+	position: absolute;
+	display: none;
+	z-index: 99;
+	min-width: 200px;
+	background: white;
+	box-shadow: 0 0 10px 2px #cdcdcd;
+	border-radius: 6px;
+	overflow: hidden;
+
+}
+.dropdown_content > a{
+	color: black;
+	display: block;
+	text-align: left;
+	padding: 14px;
+
+}
+.dropdown_content > a:hover{
+	color: red;
+	background: lightblue;
+}
+.dropdown:hover .dropdown_content{
+	display: block;
+}
+.dropdown:hover .dropdown_title{
+ color: #00a8ff;
+}
+/*serach-------------------------------------------------------*/
+.nav_search{
+	margin-right: 10px;
+	/*width: 30%;*/
+}
+.has-search .form-control {
+	
+    padding-left: 2.375rem;
+    border-radius: 20px
+}
+.form-group{
+	margin: 0 !important;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    
+}
+/*sidenav----------------------------------*/
+.sidenav_content{
+	height: 100%;
+	width: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	overflow-x: hidden;
+	background: #f4f4f4;
+	transition: 0.4s;
+	padding-top: 60px;
+	
+}
+.sidenav_content > ul >li{
+	border-bottom: 0.5px solid #e3e1e1;	
+}
+.sidenav_content > ul >li:first-child,.sidenav_content > ul >li:last-child{
+	border-bottom-width: 0px;
+}
+.sidenav_content > ul >li > a{
+	padding: 15px 12px 15px 30px;
+	transition: 0.3s;
+	display:block;
+	font-size: 14px;
+	color: #898a8a;
+}
+.sidenav_content > ul >li > a:hover{
+	color: black;
+	background: #eaeaea;
+	font-weight: bold;
+	
+}
+.sidenav_content > ul >li > a.closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	color: black;
+	margin-left: 50px;
+	background: none;
+	
+}
+.sidenav_bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: black;
+	opacity: 0.4;
+	height: 100%;
+	display: none;
+}
+/*sidenav_icon-------------------------------*/
+.sidenav_incon{
+	padding: 15px 12px 15px 30px;
+}
+.sidenav_incon a{
+	color: #898a8a;
+	font-size: 20px;
+}
+.sidenav_incon a:hover{
+	color: black;
+}
+/*dropdownn-------------------------------------*/
+.dropdownn{
+	display: inline;
+	position: relative;
+}
+.dropdownn:hover .dropdown_content{
+	display: block;
+}
+
+@media screen and (max-width: 992px){
+	.topnav_icon{
+		display: block;
+		float: left;
+	}
+	.topnav_content{
+		display: none;
+	}
+	.topnav_logo{
+		margin:auto;
+	
+	}
+	.topnav_cart{
+		float: right;
+		font-size: 20px;
+	}
+	.dropdown_content1{
+		visibility: hidden;
+	}
+	.nav_search{
+		padding-bottom: 15px;
+		width: 80%;
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+}
+
+
